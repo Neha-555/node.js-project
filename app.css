@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 500px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.mood-selector {
+  margin-bottom: 30px;
+}
+
+.mood-buttons button {
+  font-size: 2rem;
+  margin: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.mood-buttons button:hover {
+  transform: scale(1.2);
+}
+
+.quote-box {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+  animation: fadeIn 0.5s ease;
+}
+
+.quote-box h2 {
+  margin: 0 0 10px;
+}
+
+.quote-box p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+}
+
+.quote-box.happy {
+  background-color: #fffae5;
+}
+
+.quote-box.sad {
+  background-color: #e0eafc;
+}
+
+.quote-box.angry {
+  background-color: #fdecea;
+}
+
+.quote-box.calm {
+  background-color: #e0fff4;
+}
+
+.quote-box.excited {
+  background-color: #fcefee;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.quote-message {
+  color: #888;
+  font-style: italic;
+}
